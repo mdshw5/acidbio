@@ -148,6 +148,8 @@ tools:
         c_curve: preseq c_curve FILE
     - pybedtools:
         intersection_matrix: intersection_matrix.py FILE INTERSECT
+    - pyfaidx:
+        faidx: faidx --bed FILE FASTA
     - pygtftk:
         bed_to_gtf: gtftk bed_to_gtf -i FILE
     - qualimap:
@@ -265,6 +267,7 @@ conda-environment:
     portcullis: py36
     preseq: special1
     pybedtools: base
+    pyfaidx: 
     pygtftk: py36
     octopus: py27
     qualimap: base
